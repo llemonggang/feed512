@@ -39,6 +39,32 @@
       </div>
 
       <div class="create-form">
+        <div class="create-fields">
+          <p>Business Information</p>
+          <form action="business-info">
+          <select name="business-dropdown">
+            <option value="volvo">Business Type</option>
+            <option value="saab">Restaurant</option>
+            <option value="fiat">Bakery</option>
+            <option value="audi">Grocery</option>
+          </select>
+        </form>
+        </div>
+        <form id="contact">
+          <input type="text" name="street" placeholder="Street Address"><br>
+          <input type="text" name="city" placeholder="City"><br>
+          <input type="text" name="state" placeholder="State">
+          <input type="text" name="zip" placeholder="Zipcode"><br>
+          <p>Contact Information</p>
+          <input type="text" name="name" placeholder="Name (first, last)"><br>
+          <input type="text" name="phone" placeholder="Phone Number"><br>
+        </form>
+        <button type="button">+ Additional Contacts</button>
+        <div class="add-contacts">//display none until js click
+          <input type="text" name="name" placeholder="Name (first, last)"><br>
+          <input type="text" name="phone" placeholder="Phone Number"><br>
+        </div>
+        <button type="button">Continue</br>v</button>
 
       </div>
 
