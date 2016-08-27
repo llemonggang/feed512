@@ -25,7 +25,6 @@
     <div class="create-profile-box">
 
       <div class="create-title">
-
         <p>CREATING YOUR GIVER PROFILE</p>
         <div class="progress">//we'll change progress amount with js
         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -41,12 +40,12 @@
       <div class="create-form">
         <div class="create-fields">
           <p>Business Information</p>
-          <form action="business-info">
+          <form action="#">
           <select name="business-dropdown">
-            <option value="volvo">Business Type</option>
-            <option value="saab">Restaurant</option>
-            <option value="fiat">Bakery</option>
-            <option value="audi">Grocery</option>
+            <option value="Type">Business Type</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Grocery">Grocery</option>
           </select>
         </form>
         </div>
@@ -64,9 +63,153 @@
           <input type="text" name="name" placeholder="Name (first, last)"><br>
           <input type="text" name="phone" placeholder="Phone Number"><br>
         </div>
-        <button type="button">Continue</br>v</button>
-
+        <A HREF="#jump">Continue</br>v</A>
       </div>
+
+    </div>
+    <div class="apple-img"></div>
+
+    <A NAME="jump">
+    <div class="personalize-profile-box">
+
+      <div class="personalize-title">
+        <p>PERSONALIZE YOUR PROFILE</p>
+        <div class="progress">//we'll change progress amount with js
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only"></span>
+      </div>
+      <div class="select-details">
+        <p>As a giver, what do you want to share with the community?<br><span>You can share the details of your goods when you contact your receiver</span></p>
+        <ul>
+          <div class="col-one">
+          <li>Canned/Jarred Goods</li>
+          <li>Breads</li>
+          <li>Frozen Foods</li>
+          <li>Prepared Meals</li>
+          </div>
+          <div class="col-two">
+          <li>Dry Goods</li>
+          <li>Meat</li>
+          <li>Snacks</li>
+          <li>Drinks</li>
+          </div>
+          <div class="col-three">
+          <li>Produce</li>
+          <li>Dairy</li>
+          <li>Sweets</li>
+          <li>Food Storage/Tools</li>
+          </div>
+        </ul>
+        <p>How would you like your goods transported?</p>
+        <ul>
+          <li>Picked Up</li>
+          <li>Dropped Off</li>
+        </ul>
+        <p>We value your time. When is the best time for pickup?<br><span>You can change your availability in your profile</span></p>
+        <div class="week-btns" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Mon</button>
+          <button type="button" class="btn btn-default">Tue</button>
+          <button type="button" class="btn btn-default">Wed</button>
+          <button type="button" class="btn btn-default">Thu</button>
+          <button type="button" class="btn btn-default">Fri</button>
+          <button type="button" class="btn btn-default">Sat</button>
+          <button type="button" class="btn btn-default">Sun</button>
+        </div>
+        <div class="time-btns">
+        <form action="#">
+        <select name="time-dropdown">
+          <option value="five-am">5 AM</option>
+          <option value="six-am">6 AM</option>
+          <option value="seven-am">7AM</option>
+          <option value="eight-am">8 AM</option>
+          <option value="nine-am">9 AM</option>
+          <option value="ten-am">10 AM</option>
+          <option value="eleven-am">11 AM</option>
+          <option value="twelve-pm">12 PM</option>
+          <option value="one-pm">1 PM</option>
+          <option value="two-pm">2 PM</option>
+          <option value="three-pm">3 PM</option>
+          <option value="four-pm">4 PM</option>
+          <option value="five-pm">5 PM</option>
+          <option value="six-pm">6 PM</option>
+          <option value="seven-pm">7 PM</option>
+          <option value="eight-pm">8 PM</option>
+          <option value="nine-pm">9 PM</option>
+          <option value="ten-pm">10 PM</option>
+          <option value="eleven-pm">11 PM</option>
+          <option value="twelve-am">12 AM</option>
+        </select>
+        </form>
+        <p>to</p>
+        <form action="#">
+        <select name="time-dropdown">
+          <option value="five-am">5 AM</option>
+          <option value="six-am">6 AM</option>
+          <option value="seven-am">7AM</option>
+          <option value="eight-am">8 AM</option>
+          <option value="nine-am">9 AM</option>
+          <option value="ten-am">10 AM</option>
+          <option value="eleven-am">11 AM</option>
+          <option value="twelve-pm">12 PM</option>
+          <option value="one-pm">1 PM</option>
+          <option value="two-pm">2 PM</option>
+          <option value="three-pm">3 PM</option>
+          <option value="four-pm">4 PM</option>
+          <option value="five-pm">5 PM</option>
+          <option value="six-pm">6 PM</option>
+          <option value="seven-pm">7 PM</option>
+          <option value="eight-pm">8 PM</option>
+          <option value="nine-pm">9 PM</option>
+          <option value="ten-pm">10 PM</option>
+          <option value="eleven-pm">11 PM</option>
+          <option value="twelve-am">12 AM</option>
+        </select>
+        </form>
+        <button type="button">+ add time</button>
+        <div class="add-time">//display none until js click
+          <input type="text" name="time" placeholder="Custom Time"><br>
+        </div>
+        <button type="submit" value="submit">Search for Organizations</button>//add carot with css
+      </div>
+    </div>
+
+    <div class="ham-img"></div>
+
+    <hr>//for purple line
+
+    <div class="footer">
+      <ul id="one">
+        <li class="list-title"><a href="#">LEARN MORE</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Ethics Point</a></li>
+      </ul>
+
+      <ul id="two">
+        <li class="list-title"><a href="#">GET INVOLVED</a></li>
+        <li><a href="#">Donate Food</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+
+      <ul id="three">
+        <li class="list-title"><a href="#">ASSISTANCE</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Partners</a></li>
+      </ul>
+
+      <ul id="four">
+        <li class="list-title"><a href="#">DONATE</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+
+      <ul id="logos">
+        <li id="twitter"><a href="#"><img src="#"></a></li>
+        <li id="facebook"><a href="#"><img src="#"></a></li>
+        <li id="rss"><a href="#"><img src="#"></a></li>
+      </ul>
 
     </div>
 
