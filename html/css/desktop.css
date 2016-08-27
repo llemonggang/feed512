@@ -1,9 +1,29 @@
 #main-nav {
-  width: 600px;
+  width: 800px;
   display: inline-block;
   text-align: center;
 }
+#nav-logo {
+  float: left;
+  margin-top: 20px;
+}
+#main-nav ul {
+  float: right;
+  margin-top: 15px;
+}
+#main-nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #4A4A4A;
+  border-left: 1px solid black;
+  font: SF UI Display Regular;
+}
+#main-nav ul li:first-child {
+  border-left:none;
+}
 body {
   text-align: center;
-  color: red;
+  color: green;
 }
