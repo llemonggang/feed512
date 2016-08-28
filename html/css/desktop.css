@@ -1,29 +1,51 @@
+body {
+  text-align: center;
+  color: green;
+}
 #main-nav {
-  width: 800px;
+  width: 900px;
   display: inline-block;
   text-align: center;
 }
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
 #nav-logo {
   float: left;
   margin-top: 20px;
 }
 #main-nav ul {
   float: right;
-  margin-top: 15px;
+  margin-top: 32px;
 }
 #main-nav ul li {
   display: inline-block;
   list-style: none;
-  padding: 15px;
-  font-size: 14px;
-  color: #4A4A4A;
   border-left: 1px solid black;
   font: SF UI Display Regular;
 }
 #main-nav ul li:first-child {
   border-left:none;
 }
-body {
-  text-align: center;
-  color: green;
+#main-nav ul li a {
+  padding: 15px;
+  font-size: 18px;
+  color: #4A4A4A;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#main-nav ul li a span {
+  text-transform: lowercase;
+}
+#home-background {
+  background-image: url("images/home_pic.png");
+  background-position: center;
+  background-size: cover;
+
 }
