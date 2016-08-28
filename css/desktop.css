@@ -53,7 +53,6 @@ body {
   color: green;
   font-family: "Helvetica", sans-serif;
   margin: 0 auto;
-  letter-spacing: 1px;
 }
 #main-nav {
   width: 1000px;
@@ -205,7 +204,7 @@ h2 {
 .step {
   float: left;
   width: 235px;
-  padding: 40px 30px 100px 30px;
+  padding: 40px 30px 80px 30px;
   margin: 0;
 }
 .step img {
@@ -222,6 +221,55 @@ p {
   line-height: 22px;
 
 }
-.story-container {
+
+h3 {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 6px solid #6B8A00;
   display: inline-block;
+  padding-top:40px;
+  padding-bottom: 10px;
+  width:300px;
+}
+
+.story-container {
+  text-align: center;
+  background-color: #522A51;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: inline-block;
+  overflow: auto;
+  width: 1050px;
+
+}
+.story {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+  font-size: 18px;
+  color: #fff;
+  line-height: 26px;
+  text-align: left;
+  padding: 60px 30px 60px 80px;
+  display: inline-block;
+  width: 680px;
+  letter-spacing: 1px;
+}
+#carrot {
+  float: right;
+  height:236px;
+  width: 236px;
+  display: inline-block;
+  margin-top: 60px;
+  padding-right: 20px;
+
+
 }
