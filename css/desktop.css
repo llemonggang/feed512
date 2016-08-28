@@ -270,6 +270,49 @@ h3 {
   display: inline-block;
   margin-top: 60px;
   padding-right: 20px;
+}
+.fa {
+  color:#6B8A00;
+  font-size: 38px;
+  float: left;
+
+}
+footer {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+  line-height: 40px;
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+  font-size: 17px;
+  letter-spacing: .5px;
+}
+footer ul li {
+  list-style: none;
+
+}
+footer ul li a {
+  text-decoration: none;
+  color: #4A4A4A;
+
+}
+footer ul {
+  float: left;
+  padding:40px;
+
+}
+#social li {
+  display: inline-block;
+  padding: 0px 18px 0px 0px;
 
 
+}
+.list-title a {
+  text-transform: uppercase;
+  color: #6B8A00;
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
 }
