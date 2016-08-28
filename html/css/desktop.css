@@ -1,9 +1,15 @@
+#main-wrapper {
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+}
 body {
   text-align: center;
   color: green;
+  font: SF UI;
 }
 #main-nav {
-  width: 900px;
+  width: 1000px;
   display: inline-block;
   text-align: center;
 }
@@ -47,5 +53,6 @@ body {
   background-image: url("images/home_pic.png");
   background-position: center;
   background-size: cover;
+  height: 650px;
 
 }
