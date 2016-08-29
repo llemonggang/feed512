@@ -12,7 +12,7 @@ lock.on("authenticated", function(authResult) {
     }
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('profile', JSON.stringify(profile));
-      loadToDoApp()
+      loadFeedApp()
   });
 });
  $(document).ready(function () {
@@ -33,7 +33,7 @@ function logOut() {
 
 function checkLoggedIn() {
   if (isLoggedIn()) {
-    loadToDoApp()
+    loadFeedApp()
   }else {
     showWelcome()
   }
@@ -51,10 +51,15 @@ function isLoggedIn() {
     return false;
   }
 }
-function loadToDoApp() {
+function loadFeedApp() {
   console.log('loadFeedApp');
   showApp()
 }
+function showApp() {
+  $('#app').show()
+  $('#welcome').hide()
+}
+
 
 // function loadTodo(todo) {
 //   var li = $('<li></li>');
@@ -79,7 +84,3 @@ function loadToDoApp() {
 //     })
 //   })
 // }
-function showApp() {
-  $('#app').show()
-  $('#welcome').hide()
-}
