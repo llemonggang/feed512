@@ -1,10 +1,12 @@
 body {
-  background-color: #4A4A4A;
+  /*background-color: #4A4A4A;*/
 }
 ul {
   list-style: none;
 }
-
+/*li{
+  display: inline-block;
+}*/
 
 /*a:hover {
   background-color: #6B8A00;
