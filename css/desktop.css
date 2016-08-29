@@ -176,6 +176,9 @@ h1 {
      border: 0;
      letter-spacing: 2.5px;
      }
+     .btn-shape:hover {
+       cursor: pointer;
+     }
 #receive-btn {
   background-color: #6B8A00;
 }
