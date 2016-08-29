@@ -1,5 +1,5 @@
 var lock = new Auth0Lock(
-  'kVq2br5crIamzToIbqQnGIY6anIO33cY',
+  'iUWogB54EXwdr7BwdaM5nXn3rVv4crj1',
   'seesharp.auth0.com'
 );
 // Listening for the authenticated event
@@ -16,6 +16,7 @@ lock.on("authenticated", function(authResult) {
   });
 });
  $(document).ready(function () {
+   alert('boom');
   $('#login-button').click(function (e) {
     e.preventDefault()
     lock.show()
