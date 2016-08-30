@@ -64,7 +64,6 @@ function isLoggedIn() {
   }
 }
 function loadFeedApp() {
-  console.log('loadFeedApp');
   showApp()
 }
 function showApp() {

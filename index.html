@@ -11,11 +11,8 @@
 </head>
 
 <body>
-  <div id="welcome">
-    <h1>Welcom to Feed 512</h1>
-    <button type="button" id="login-button">login</button>
-  </div>
-  <div id="app" style="display: none;">
+
+
 
 
     <nav id="main-nav">
@@ -43,17 +40,23 @@
 
       <div id="home-background">
         <div id="give-receive-box">
+          <div id="welcome">
+            <h1>Welcome to Feed 512</h1>
+            <button type="button" id="login-button">Sign Up</button>
+          </div>
+          <div id="app" style="display: none;">
 
           <h1>Start making a difference one meal at a time!</h1>
 
           <div class="give side">
             <p id="giver">Have food to share with the community?</p>
-            <button id="give-btn" class="btn-shape" type="button" name="button">I'm a giver</button>
+            <a href="inbox.html"><button id="give-btn" class="btn-shape" type="button" name="button">I'm a giver</button></a>
           </div>
 
           <div class="receive side">
             <p id="receiver">Have a community that's in need of food?</p>
-            <button id="receive-btn" class="btn-shape" type="button" name="button">I'm a receiver</button>
+            <a href="matches.html"><button id="receive-btn" class="btn-shape" type="button" name="button">I'm a receiver</button></a>
+          </div>
           </div>
 
         </div>
@@ -146,7 +149,7 @@
       </footer>
 
     </div>
-  </div>
+
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="//cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
