@@ -1,5 +1,8 @@
 $(document).ready(function () {
-
+createProfile();
+updateProfile();
+deleteProfile();
+getProfile();
 });
 
 function createProfile() {
@@ -20,4 +23,16 @@ function createProfile() {
       (newProfile).val('')
     })
   })
+}
+
+function updateProfile() {
+
+}
+
+function deleteProfile() {
+
+}
+
+function getProfile() {
+
 }
