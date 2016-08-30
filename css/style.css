@@ -332,3 +332,14 @@ footer ul {
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
 }
+/*SIGN UP PAGE*/
+#create-profile {
+  text-align: left;
+  font-size: 20px;
+}
+#create-profile ul li{
+  display: block;
+  padding: 25px 35px;
+  line-height: 10px;
+
+}
