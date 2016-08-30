@@ -70,7 +70,7 @@ function showApp() {
   $('#app').show()
   $('#welcome').hide()
 }
-function hasProfile() {
-  if
-
-}
+// function hasProfile() {
+//   if
+//
+// }
