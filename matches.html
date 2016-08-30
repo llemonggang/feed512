@@ -4,271 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Donation Available</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
   <body>
-    <header><p></p>//for logo
+    <header>
+      <div class="items"></div>
+      <h1>Donations Available</h1>
 
-    <ul> //for nav bar
-      <li>OUR STORY</li>
-      <li>ACCOUNT</li>
-      <li>EVENTS & NEWS</li>
-      <li>FAQs</li>
-      <li>DONATE</li>
+      <!-- <img src="images/FEED512_Logo.png" alt="512-Logo"> -->
+      <!-- <p></p>//for logo -->
+
+    <ul>
+      <!-- //for nav bar -->
+      <li><a href="story"></a>OUR STORY</li>
+      <li><a href="ac">ACCOUNT</li>
+      <li><a href="event">EVENTS &amp; NEWS</li>
+      <li><a href="que">FAQs</li>
+      <li><a href="donate">DONATE</li>
     </ul>
-
+    <div class="list">Empty List</div>
     </header>
 
-    <div class="search-results-title">
-      <p>search results</p>
-      <div class="progress">//we'll change progress amount with js
-      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-        <span class="sr-only"></span>
-      </div>
-      </div>
-    </div>
 
-    <div class="left-side">
-
-      <p><span>down carot</span>Modify Search</p>
-
-      <div class="checkboxes">
-        <p>Your Offer</p>
-        <div class="col-one">
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Canned/Jarred Goods</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Breads</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Frozen Foods</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Prepared Meals</label>
-        </div></li>
-        </div>
-
-        <div class="col-two">
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Dry Goods</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Meat</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Snacks</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Drinks</label>
-        </div></li>
-        </div>
-
-        <div class="col-three">
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Produce</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Dairy</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Sweets</label>
-        </div></li>
-        <li><div class="checkbox">
-           <input type="checkbox" value="None" class="checkbox" name="check"/>
-           <label for="checkbox">Food Storage/Tools</label>
-        </div></li>
-        </div>
-      </div>
-
-      <div class="pick-up-availability">
-        <p>Transportation</p>
-        <ul>
-          <li><div class="checkbox">
-             <input type="checkbox" value="None" class="checkbox" name="check"/>
-             <label for="checkbox">Picked Up</label></div></li>
-          <li><div class="checkbox">
-             <input type="checkbox" value="None" class="checkbox" name="check"/>
-             <label for="checkbox">Dropped Off</label></div></li>
-        </ul>
-
-        <div class="week-btns">
-          <p>Availability</p>
-          <ul>
-            <li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Mon</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Tue</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Wed</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Thu</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Fri</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Sat</label>
-            </div></li><li><div class="checkbox">
-               <input type="checkbox" value="None" class="checkbox" name="check"/>
-               <label for="checkbox">Sun</label>
-            </div></li>
-          </ul>
-        </div>
-
-        <div class="sort">
-          <p>Sort By</p>
-          <div class="checkbox">
-             <input type="checkbox" value="None" class="checkbox" name="check"/>
-             <label for="checkbox">Best Matches</label>
-          </div>
-          <div class="checkbox">
-             <input type="checkbox" value="None" class="checkbox" name="check"/>
-             <label for="checkbox">Distance</label>
-          </div>
-        </div>
-
-        <div class="back-arrow"></div>
-      </div>
-
-      <div id="result-one">
-        <div class="central-texas">
-          <ul>
-            <li>image</li>
-            <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
-          </ul>
-          <button type="button" name="button">View Availability<span>right carot</span></button>
-          </br><hr>
-        </div>
-        <div class="pop-up">
-          <p><span>left carot</span>Please select a specific pick up time:</p>
-          <div class="week-btns">
-            <ul>
-              <li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Mon</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Tue</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Wed</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Thu</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Fri</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Sat</label>
-              </div></li><li><div class="checkbox">
-                 <input type="checkbox" value="None" class="checkbox" name="check"/>
-                 <label for="checkbox">Sun</label>
-              </div></li>
-            </ul>
-          </div>
-          <div class="time-btns">
-            <form action="#">
-            <select name="time-dropdown">
-              <option value="five-am">5 AM</option>
-              <option value="six-am">6 AM</option>
-              <option value="seven-am">7AM</option>
-              <option value="eight-am">8 AM</option>
-              <option value="nine-am">9 AM</option>
-              <option value="ten-am">10 AM</option>
-              <option value="eleven-am">11 AM</option>
-              <option value="twelve-pm">12 PM</option>
-              <option value="one-pm">1 PM</option>
-              <option value="two-pm">2 PM</option>
-              <option value="three-pm">3 PM</option>
-              <option value="four-pm">4 PM</option>
-              <option value="five-pm">5 PM</option>
-              <option value="six-pm">6 PM</option>
-              <option value="seven-pm">7 PM</option>
-              <option value="eight-pm">8 PM</option>
-              <option value="nine-pm">9 PM</option>
-              <option value="ten-pm">10 PM</option>
-              <option value="eleven-pm">11 PM</option>
-              <option value="twelve-am">12 AM</option>
-            </select>
-            </form>
-            <p>to</p>
-            <form action="#">
-            <select name="time-dropdown">
-              <option value="five-am">5 AM</option>
-              <option value="six-am">6 AM</option>
-              <option value="seven-am">7AM</option>
-              <option value="eight-am">8 AM</option>
-              <option value="nine-am">9 AM</option>
-              <option value="ten-am">10 AM</option>
-              <option value="eleven-am">11 AM</option>
-              <option value="twelve-pm">12 PM</option>
-              <option value="one-pm">1 PM</option>
-              <option value="two-pm">2 PM</option>
-              <option value="three-pm">3 PM</option>
-              <option value="four-pm">4 PM</option>
-              <option value="five-pm">5 PM</option>
-              <option value="six-pm">6 PM</option>
-              <option value="seven-pm">7 PM</option>
-              <option value="eight-pm">8 PM</option>
-              <option value="nine-pm">9 PM</option>
-              <option value="ten-pm">10 PM</option>
-              <option value="eleven-pm">11 PM</option>
-              <option value="twelve-am">12 AM</option>
-            </select>
-            </form>
-          </div>
-          <button type="button" name="button">Request<span>right carot</span></button>
-        </div>
-      </div>
-
-      <div id="result-two">/*doesn't matter that these are repeats because they'll actually be changed to be whatever the search results are.*/
-        <div class="central-texas">
-          <ul>
-            <li>image</li>
-            <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
-          </ul>
-          <button type="button" name="button">View Availability<span>right carot</span></button>
-          </br><hr>
-        </div>
-      </div>
-
-      <div id="result-three">
-        <div class="central-texas">
-          <ul>
-            <li>image</li>
-            <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
-          </ul>
-          <button type="button" name="button">View Availability<span>right carot</span></button>
-          </br><hr>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="right-side">
-      <img src="http://placehold.it/533x526s">//will come from google's api ?
-    </div>
 
     <div class="footer">
       <ul id="one">
@@ -310,3 +71,251 @@
   <script src="" charset="utf-8"></script>
   </body>
 </html>
+
+
+<!-- <div class="search-results-title">
+  <p>search results</p>
+  <div class="progress">//we'll change progress amount with js
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only"></span>
+  </div>
+  </div>
+</div>
+
+<div class="left-side">
+
+  <p><span>down carot</span>Modify Search</p>
+
+  <div class="checkboxes">
+    <p>Your Offer</p>
+    <div class="col-one">
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Canned/Jarred Goods</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Breads</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Frozen Foods</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Prepared Meals</label>
+    </div></li>
+    </div>
+
+    <div class="col-two">
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Dry Goods</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Meat</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Snacks</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Drinks</label>
+    </div></li>
+    </div>
+
+    <div class="col-three">
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Produce</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Dairy</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Sweets</label>
+    </div></li>
+    <li><div class="checkbox">
+       <input type="checkbox" value="None" class="checkbox" name="check"/>
+       <label for="checkbox">Food Storage/Tools</label>
+    </div></li>
+    </div>
+  </div>
+
+  <div class="pick-up-availability">
+    <p>Transportation</p>
+    <ul>
+      <li><div class="checkbox">
+         <input type="checkbox" value="None" class="checkbox" name="check"/>
+         <label for="checkbox">Picked Up</label></div></li>
+      <li><div class="checkbox">
+         <input type="checkbox" value="None" class="checkbox" name="check"/>
+         <label for="checkbox">Dropped Off</label></div></li>
+    </ul>
+
+    <div class="week-btns">
+      <p>Availability</p>
+      <ul>
+        <li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Mon</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Tue</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Wed</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Thu</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Fri</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Sat</label>
+        </div></li><li><div class="checkbox">
+           <input type="checkbox" value="None" class="checkbox" name="check"/>
+           <label for="checkbox">Sun</label>
+        </div></li>
+      </ul>
+    </div>
+
+    <div class="sort">
+      <p>Sort By</p>
+      <div class="checkbox">
+         <input type="checkbox" value="None" class="checkbox" name="check"/>
+         <label for="checkbox">Best Matches</label>
+      </div>
+      <div class="checkbox">
+         <input type="checkbox" value="None" class="checkbox" name="check"/>
+         <label for="checkbox">Distance</label>
+      </div>
+    </div>
+
+    <div class="back-arrow"></div>
+  </div>
+
+  <div id="result-one">
+    <div class="central-texas">
+      <ul>
+        <li>image</li>
+        <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
+      </ul>
+      <button type="button" name="button">View Availability<span>right carot</span></button>
+      </br><hr>
+    </div>
+    <div class="pop-up">
+      <p><span>left carot</span>Please select a specific pick up time:</p>
+      <div class="week-btns">
+        <ul>
+          <li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Mon</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Tue</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Wed</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Thu</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Fri</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Sat</label>
+          </div></li><li><div class="checkbox">
+             <input type="checkbox" value="None" class="checkbox" name="check"/>
+             <label for="checkbox">Sun</label>
+          </div></li>
+        </ul>
+      </div>
+      <div class="time-btns">
+        <form action="#">
+        <select name="time-dropdown">
+          <option value="five-am">5 AM</option>
+          <option value="six-am">6 AM</option>
+          <option value="seven-am">7AM</option>
+          <option value="eight-am">8 AM</option>
+          <option value="nine-am">9 AM</option>
+          <option value="ten-am">10 AM</option>
+          <option value="eleven-am">11 AM</option>
+          <option value="twelve-pm">12 PM</option>
+          <option value="one-pm">1 PM</option>
+          <option value="two-pm">2 PM</option>
+          <option value="three-pm">3 PM</option>
+          <option value="four-pm">4 PM</option>
+          <option value="five-pm">5 PM</option>
+          <option value="six-pm">6 PM</option>
+          <option value="seven-pm">7 PM</option>
+          <option value="eight-pm">8 PM</option>
+          <option value="nine-pm">9 PM</option>
+          <option value="ten-pm">10 PM</option>
+          <option value="eleven-pm">11 PM</option>
+          <option value="twelve-am">12 AM</option>
+        </select>
+        </form>
+        <p>to</p>
+        <form action="#">
+        <select name="time-dropdown">
+          <option value="five-am">5 AM</option>
+          <option value="six-am">6 AM</option>
+          <option value="seven-am">7AM</option>
+          <option value="eight-am">8 AM</option>
+          <option value="nine-am">9 AM</option>
+          <option value="ten-am">10 AM</option>
+          <option value="eleven-am">11 AM</option>
+          <option value="twelve-pm">12 PM</option>
+          <option value="one-pm">1 PM</option>
+          <option value="two-pm">2 PM</option>
+          <option value="three-pm">3 PM</option>
+          <option value="four-pm">4 PM</option>
+          <option value="five-pm">5 PM</option>
+          <option value="six-pm">6 PM</option>
+          <option value="seven-pm">7 PM</option>
+          <option value="eight-pm">8 PM</option>
+          <option value="nine-pm">9 PM</option>
+          <option value="ten-pm">10 PM</option>
+          <option value="eleven-pm">11 PM</option>
+          <option value="twelve-am">12 AM</option>
+        </select>
+        </form>
+      </div>
+      <button type="button" name="button">Request<span>right carot</span></button>
+    </div>
+  </div>
+
+  <div id="result-two">/*doesn't matter that these are repeats because they'll actually be changed to be whatever the search results are.*/
+    <div class="central-texas">
+      <ul>
+        <li>image</li>
+        <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
+      </ul>
+      <button type="button" name="button">View Availability<span>right carot</span></button>
+      </br><hr>
+    </div>
+  </div>
+
+  <div id="result-three">
+    <div class="central-texas">
+      <ul>
+        <li>image</li>
+        <li><p>central texas food bank</br>100 Congress Ave, Austin, Tx 78701 | 5 miles</br>Looking for:</br>Canned/Jarred Item | Produce | Breads</p></li>
+      </ul>
+      <button type="button" name="button">View Availability<span>right carot</span></button>
+      </br><hr>
+    </div>
+  </div>
+
+</div>
+
+<div class="right-side">
+  <img src="http://placehold.it/533x526s">//will come from google's api ?
+</div> -->
