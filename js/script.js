@@ -16,7 +16,6 @@ lock.on("authenticated", function(authResult) {
   });
 });
  $(document).ready(function () {
-   alert('boom');
   $('#login-button').click(function (e) {
     e.preventDefault()
     lock.show()
@@ -43,6 +42,18 @@ function showWelcome() {
   $('#welcome').show()
   $('#app').hide()
 }
+$('#accounts').click(function () {
+  showDropDown()
+})
+$("#main-wrapper").click(function () {
+  hideDropDown()
+})
+function showDropDown() {
+  $('.drop-down').show()
+}
+function hideDropDown() {
+  $('.drop-down').hide()
+}
 
 function isLoggedIn() {
   var idToken = localStorage.getItem('id_token')
@@ -60,28 +71,3 @@ function showApp() {
   $('#app').show()
   $('#welcome').hide()
 }
-
-
-// function loadTodo(todo) {
-//   var li = $('<li></li>');
-//     li.text(todo.task + ' ');
-//     var a = $('<a>Delete</a>');      
-//     a.attr('href','http://localhost:3000/bands/' + todo._id);     a.addClass('deleteBand');    
-//     li.append(a);    
-//      $('#todos').append(li);
-//      console.log(todo);
-//
-// }
-// function deleteToDo() {
-//   $(document).on('click', 'a.deleteToDo', function (e) {
-//     e.preventDefault()
-//     var link = $(this)
-//     $.ajax({
-//       url: link.attr('href'),
-//       method: 'DELETE'
-//     })
-//     .done(function () {
-//       link.parent('li').remove()
-//     })
-//   })
-// }

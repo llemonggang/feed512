@@ -103,14 +103,27 @@ body {
 #main-nav ul li a span {
   text-transform: lowercase;
 }
+.drop-down {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  margin-left: 10px;
+  padding:10px;
+}
+.menu {
+  padding: 10px 17px;
+  border-bottom: 1px solid black;
+  line-height: 22px;
+  display: block;
+}
+
 #home-background {
   background-image: url("../images/home_pic.png");
   background-position: center;
   background-size: cover;
   height: 650px;
   text-align: center;
-
-
 }
 #give-receive-box {
   padding: 40px 70px;
