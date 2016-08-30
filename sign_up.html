@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/sign_up.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   </head>
@@ -32,7 +32,7 @@
           <span class="sr-only"></span>
           <form action="demo_form.asp">
             <input type="file" name="pic" accept="image/*">
-            <input type="submit">//make submit display: none?
+            <input type="submit" class="submit-btn">//make submit display: none?
           </form>
         </div>
         </div>
@@ -51,14 +51,18 @@
         </form>
         </div>
         <form id="contact">
-          <input type="text" name="street" placeholder="Street Address"><br>
-          <input type="text" name="city" placeholder="City"><br>
-          <input type="text" name="state" placeholder="State">
-          <input type="text" name="zip" placeholder="Zipcode"><br>
+          <!-- <input type="text" name="street" placeholder="Street Address"><br> -->
+          <input type="text" class="input address-field" name="address" placeholder="address"><br>
+          <!-- <input type="text" name="state" placeholder="State">
+          <input type="text" name="zip" placeholder="Zipcode"><br> -->
           <p>Contact Information</p>
-          <input type="text" name="name" placeholder="Name (first, last)"><br>
-          <input type="text" name="phone" placeholder="Phone Number"><br>
-        </form>
+          <input type="text" class="input fullName-field" name="fullName" placeholder="Name (first, last)">
+          <input type="text" class="input phone-field" name="phone" placeholder="Phone Number">
+          <input type="text" class="input businessType-field" name="phone" placeholder="businessType"><span class="Optional">Optional</span>
+          <input type="text" class="input email-field" name="email" placeholder="email">
+          <button type="submit" class="submit-btn"  name="button">update</button>
+
+        </form
         <button type="button">+ Additional Contacts</button>
         <div class="add-contacts">//display none until js click
           <input type="text" name="name" placeholder="Name (first, last)"><br>
@@ -275,6 +279,6 @@
     </div>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="" charset="utf-8"></script>
+  <script src="js/profile.js" charset="utf-8"></script>
   </body>
 </html>
