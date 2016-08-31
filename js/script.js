@@ -18,8 +18,9 @@ lock.on("authenticated", function(authResult) {
     checkLoggedIn()
   });
 });
- $(document).ready(function() {
-   checkLoggedIn()
+
+$(document).ready(function() {
+  checkLoggedIn()
   $('#login-button').click(function(e) {
     e.preventDefault()
     lock.show()
@@ -37,6 +38,9 @@ lock.on("authenticated", function(authResult) {
 
 function saveProfile() {
   $.ajax({
+    headers: {
+      'Authorization': 'Bearer ' + localStorage.find(id_token)
+    },
     url:'/profiles',
     method: 'POST',
     data: $('#profile-form').serialize()
@@ -48,7 +52,7 @@ function saveProfile() {
 
 function logOut() {
   localStorage.removeItem('id_token')
-  showWelcome()
+  window.location.href = '/';
 }
 
 function checkLoggedIn() {
@@ -84,8 +88,6 @@ function showApp() {
   $('#welcome').hide()
   $('#create-profile').hide()
 }
-
-
 function isLoggedIn() {
   var idToken = localStorage.getItem('id_token')
   if (idToken) {
