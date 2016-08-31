@@ -12,30 +12,30 @@ $(document).ready(function() {
 });
 
 // once she is done comment this
-var fakeData = [
-  {
-    name: 'Foobar'
-  },
-  {
-    name: 'Test'
-  },
-  {
-    name: 'Canned Food/Tools'
-  }
+// var fakeData = [
+//   {
+//     name: 'Foobar'
+//   },
+//   {
+//     name: 'Test'
+//   },
+//   {
+//     name: 'Canned Food/Tools'
+//   }
 ]
 
 function getMatches() {
-  fakeData.forEach(function (data) {
+  Data.forEach(function (data) {
     $('#matches').append('<li>' + data.name + '</li>')
   })
   // Uncomment this and instead of fake date put an actual data.
-  // $.ajax({
-  //   url: 'http://localhost:3000/matches',
-  //   //this will be replaced by the actual url. just checking
-  //   method: 'GET'
-  // })
-  // .done(function (data ) {
-  //   // li.toggleClass('claimed')
-  //   console.log(data);
-  // })
+  $.ajax({
+    url: 'http://localhost:3000/matches',
+    //this will be replaced by the actual url. just checking
+    method: 'GET'
+  })
+  .done(function (data ) {
+    // li.toggleClass('claimed')
+    console.log(data);
+  })
 }
