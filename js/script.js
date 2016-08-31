@@ -1,3 +1,6 @@
+var apiUrl = 'http://localhost:3000';
+// var apiUrl = 'TBD';
+
 var lock = new Auth0Lock(
   'iUWogB54EXwdr7BwdaM5nXn3rVv4crj1',
   'seesharp.auth0.com'
@@ -12,11 +15,12 @@ lock.on("authenticated", function(authResult) {
     }
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('profile', JSON.stringify(profile));
-      loadFeedApp()
+    checkLoggedIn()
   });
 });
- $(document).ready(function () {
-  $('#login-button').click(function (e) {
+ $(document).ready(function() {
+   checkLoggedIn()
+  $('#login-button').click(function(e) {
     e.preventDefault()
     lock.show()
   })
@@ -24,7 +28,23 @@ lock.on("authenticated", function(authResult) {
     e.preventDefault()
     logOut()
   })
+  $('#profile-form').on('submit', function (e) {
+    e.preventDefault()
+    saveProfile()
+    showApp()
+  })
 });
+
+function saveProfile() {
+  $.ajax({
+    url: apiUrl + '/profiles',
+    method: 'POST',
+    data: $('#profile-form').serialize()
+  })
+  .done(function (profile) {
+
+  })
+}
 
 function logOut() {
   localStorage.removeItem('id_token')
@@ -33,32 +53,46 @@ function logOut() {
 
 function checkLoggedIn() {
   if (isLoggedIn()) {
-    loadFeedApp()
-  }else {
+    if (hasProfile()) {
+      showApp()
+    } else {
+      showProfileForm()
+    }
+  } else {
     showWelcome()
   }
 }
+
+function hasProfile() {
+  return false;
+}
+
+function showProfileForm() {
+  $('#create-profile').show()
+  $('#welcome').hide()
+  $('#app').hide()
+}
+
 function showWelcome() {
   $('#welcome').show()
   $('#app').hide()
+  $('#create-profile').hide()
 }
+
+function showApp() {
+  $('#app').show()
+  $('#welcome').hide()
+  $('#create-profile').hide()
+}
+
 
 function isLoggedIn() {
   var idToken = localStorage.getItem('id_token')
   if (idToken) {
+    console.log('is Logged In');
     return true;
   } else {
+    console.log('is not Logged In');
     return false;
   }
 }
-function loadFeedApp() {
-  showApp()
-}
-function showApp() {
-  $('#app').show()
-  $('#welcome').hide()
-}
-// function hasProfile() {
-//   if
-//
-// }
