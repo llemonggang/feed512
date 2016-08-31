@@ -11,9 +11,6 @@ $(document).ready(function() {
   getMatches()
 });
 
-
-
-
 // once she is done comment this
 var fakeData = [
   {
@@ -31,12 +28,9 @@ function getMatches() {
   fakeData.forEach(function (data) {
     $('#matches').append('<li>' + data.name + '</li>')
   })
-
-  // Uncomment this and instead of fake date pu an actual data.
-
-
+  // Uncomment this and instead of fake date put an actual data.
   // $.ajax({
-  //   url: '/matches',
+  //   url: 'http://localhost:3000/matches',
   //   //this will be replaced by the actual url. just checking
   //   method: 'GET'
   // })
