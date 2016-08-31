@@ -7,6 +7,9 @@ function pushInbox() {
 $('.don-submit').on('click', function(e) {
   e.preventDefault()
   $.ajax({
+    headers: {
+      'Authorization': 'Bearer ' + localStorage.find(id_token)
+    },
     url: 'http://localhost:3000/donations/claimed',
     method: 'GET'
   }).done(function (donations) {
@@ -25,6 +28,9 @@ function loadDoation(donation) {
 
   $.ajax({
     url: '/profiles/' + donation.recipientId
+    headers: {
+      'Authorization': 'Bearer ' + localStorage.find(id_token)
+    },
   }).done(function (profile) {
     li.append(profile.fullName)
   })
