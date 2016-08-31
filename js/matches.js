@@ -25,7 +25,7 @@ $(document).ready(function() {
 ]
 
 function getMatches() {
-  Data.forEach(function (data) {
+  fakeData.forEach(function (data) {
     $('#matches').append('<li>' + data.name + '</li>')
   })
   // Uncomment this and instead of fake date put an actual data.
@@ -33,6 +33,9 @@ function getMatches() {
     url: 'http://localhost:3000/matches',
     //this will be replaced by the actual url. just checking
     method: 'GET'
+    data: {
+      type: $('don-field').val()
+    }
   })
   .done(function (data ) {
     // li.toggleClass('claimed')
