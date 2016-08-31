@@ -1,4 +1,4 @@
-var apiUrl = 'http://localhost:3000';
+// var apiUrl = 'http://localhost:3000';
 // var apiUrl = 'TBD';
 
 var lock = new Auth0Lock(
@@ -37,7 +37,7 @@ lock.on("authenticated", function(authResult) {
 
 function saveProfile() {
   $.ajax({
-    url: apiUrl + '/profiles',
+    url:'/profiles',
     method: 'POST',
     data: $('#profile-form').serialize()
   })
