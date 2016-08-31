@@ -1,19 +1,20 @@
-function toggleClaim() {
+function togClaimed() {
   $(document).on('click', 'li', function (e) {
     e.preventDefault()
 
     // this is the link that was clicked
     var li = $(this)
-
-    $.ajax({
-      url: li.find('a.deleteBand').attr('href'),
-      method: 'PUT',
-      data: {
-        corruptedByTheSystem: !li.hasClass('claim')
-      }
-    })
-    .done(function () {
-      li.toggleClass('claim')
-    })
   })
 }
+
+$(document).ready(function() {
+  $.ajax({
+    url: 'js/test-matches.json',
+    //this will be replaced by the actual url. just checking
+    method: 'GET'
+  })
+  .done(function (data) {
+    // li.toggleClass('claimed')
+    console.log(data);
+  })
+});
