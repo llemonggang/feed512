@@ -10,7 +10,7 @@ function createProfile() {
     $.ajax({
       url: 'http://localhost:3000/profiles',
       headers: {
-        'Authorization': 'Bearer ' + localStorage.find(id_token)
+        'Authorization': 'Bearer ' + localStorage.find('id_token')
       },
       method: 'POST',
       data: $('.profile-form').serialize()
