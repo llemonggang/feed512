@@ -39,9 +39,9 @@ $(document).ready(function() {
 function saveProfile() {
   $.ajax({
     headers: {
-      'Authorization': 'Bearer ' + localStorage.find('id_token')
+      'Authorization': 'Bearer ' + localStorage.getItem('id_token')
     },
-    url:'/profiles',
+    url:'http://localhost:3000/profiles',
     method: 'POST',
     data: $('#profile-form').serialize()
   })
