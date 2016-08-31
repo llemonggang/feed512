@@ -1,4 +1,4 @@
-function togClaimed() {
+function Claimed() {
   $(document).on('click', 'li', function (e) {
     e.preventDefault()
 
