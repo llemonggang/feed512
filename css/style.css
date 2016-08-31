@@ -103,19 +103,21 @@ body {
 #main-nav ul li a span {
   text-transform: lowercase;
 }
-.drop-down {
-  text-align: center;
-  margin: 0 auto;
-  position: absolute;
-  display: block;
-  margin-left: 10px;
-  padding:10px;
+
+.navLink .subMenu {
+    height: 0px;
+    margin-top: 18px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transition:height 0.5s ease;
+    -moz-transition:height 0.5s ease;
+    transition:height 0.5s ease
 }
-.menu {
-  padding: 10px 17px;
-  border-bottom: 1px solid black;
-  line-height: 22px;
-  display: block;
+
+.navLink:hover .subMenu {
+    height: 20px;
+    display: block;
 }
 
 #home-background {
