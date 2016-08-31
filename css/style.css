@@ -39,10 +39,7 @@
   font-weight: bold;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
 }
-header {
-  margin: 0;
-  padding:0;
-}
+
 #main-wrapper {
   text-align: center;
   width: 1050px;
