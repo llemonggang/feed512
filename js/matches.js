@@ -10,6 +10,7 @@ function togClaimed() {
 $(document).ready(function() {
   $.ajax({
     url: 'js/test-matches.json',
+    //this will be replaced by the actual url.
     method: 'GET'
   })
   .done(function (data) {
