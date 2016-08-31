@@ -13,8 +13,8 @@ $(document).ready(function() {
     //this will be replaced by the actual url. just checking
     method: 'GET'
   })
-  .done(function (data) {
+  .done(function (data ) {
     // li.toggleClass('claimed')
-    console.log(res.JSON);
+    console.log(data);
   })
 });
