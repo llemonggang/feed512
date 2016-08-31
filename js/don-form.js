@@ -10,7 +10,7 @@ function donInput() {
     $.ajax({
         url: 'http://localhost:3000/donations',
         headers: {
-          'Authorization': 'Bearer ' + localStorage.find(id_token)
+          'Authorization': 'Bearer ' + localStorage.find('id_token')
         },
         method: 'POST',
         data: $('.don-form').serialize()

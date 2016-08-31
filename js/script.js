@@ -39,7 +39,7 @@ $(document).ready(function() {
 function saveProfile() {
   $.ajax({
     headers: {
-      'Authorization': 'Bearer ' + localStorage.find(id_token)
+      'Authorization': 'Bearer ' + localStorage.find('id_token')
     },
     url:'/profiles',
     method: 'POST',
