@@ -42,18 +42,6 @@ function showWelcome() {
   $('#welcome').show()
   $('#app').hide()
 }
-$('#accounts').click(function () {
-  showDropDown()
-})
-$("#main-wrapper").click(function () {
-  hideDropDown()
-})
-function showDropDown() {
-  $('.drop-down').show()
-}
-function hideDropDown() {
-  $('.drop-down').hide()
-}
 
 function isLoggedIn() {
   var idToken = localStorage.getItem('id_token')
