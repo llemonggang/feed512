@@ -19,7 +19,7 @@ function getMatches() {
   })
   .done(function (data) {
     data.forEach(function (data) {
-      $('#matches').append('<li>' + data.name + '</li>')
+      $('#matches').append('<li>' + data.type + '</li>')
     })
     // li.toggleClass('claimed')
     console.log(data);
