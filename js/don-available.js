@@ -19,7 +19,15 @@ function getMatches() {
   })
   .done(function (data) {
     data.forEach(function (data) {
-      $('#matches').append('<li>' + data.type + '</li>')
+      var li = $("<li />")
+      li.text(data.type + ' ')
+      var a = $('<a />')
+      a.text('Claim')
+      var url = 'http://localhost:3000/donations/' + data._id + '/claim'
+      a.attr('href', url)
+      a.addClass('claimed')
+      li.append(a)
+      $('#matches').append(li)
     })
     // li.toggleClass('claimed')
     console.log(data);
