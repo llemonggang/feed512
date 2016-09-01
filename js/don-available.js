@@ -1,28 +1,9 @@
-// function Claimed() {
-//   $(document).on('click', 'li', function (e) {
-//     e.preventDefault()
-//
-//     // this is the link that was clicked
-//     var li = $(this)
-//   })
-// }
 
 $(document).ready(function() {
   getMatches()
 });
 
-// once she is done comment this
-// var fakeData = [
-//   {
-//     name: 'Foobar'
-//   },
-//   {
-//     name: 'Test'
-//   },
-//   {
-//     name: 'Canned Food/Tools'
-//   }
-]
+
 
 function getMatches() {
 
