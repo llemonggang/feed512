@@ -1,9 +1,32 @@
 
 $(document).ready(function() {
   getMatches()
+  markClaimed()
 });
 
+function markClaimed() {
+  $(document).on('click', 'a.claimed', function (e) {
+    e.preventDefault();
 
+
+    var a = $(this)
+    var url = $(this).attr('href')
+    $.ajax({
+      url: url,
+      //this will be replaced by the actual url. just checking
+      method: 'PUT',
+      //"post"
+      headers: {
+        'Authorization': 'Bearer ' + localStorage.getItem('id_token')
+      }
+    })
+    .done(function () {
+      a.parent('li').remove()
+    })
+  })
+
+
+}
 
 function getMatches() {
 
