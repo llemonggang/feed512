@@ -3,7 +3,11 @@
 
 var lock = new Auth0Lock(
   'iUWogB54EXwdr7BwdaM5nXn3rVv4crj1',
-  'seesharp.auth0.com'
+  'seesharp.auth0.com',{
+         auth: {
+             params: { scope: 'openid email' } //Details: https:///scopes
+         }
+     }
 );
 // Listening for the authenticated event
 lock.on("authenticated", function(authResult) {
@@ -57,19 +61,50 @@ function logOut() {
 
 function checkLoggedIn() {
   if (isLoggedIn()) {
-    if (hasProfile()) {
-      showApp()
-    } else {
-      showProfileForm()
-    }
+    // Get the user profile
+    $.ajax({
+      headers: {
+        'Authorization': 'Bearer ' + localStorage.getItem('id_token')
+      },
+      url: 'http://localhost:3000/profiles/me',
+      method: 'GET'
+    }).done(function(profileData) {
+      if (profileData) {
+        // User has a profile
+        showApp()
+
+      } else {
+        // No profile
+        showProfileForm()
+
+      }
+
+    })
+
   } else {
     showWelcome()
   }
 }
 
-function hasProfile() {
-  return false;
-}
+// function hasProfile() {
+//   $.ajax({
+//     headers: {
+//       'Authorization': 'Bearer ' + localStorage.getItem('id_token')
+//     },
+//     url: 'http://localhost3000/profiles/me',
+//     method: 'GET'
+//   }).done(function() {
+//
+//     if('id_token') {
+//       console.log('has token');
+//       return ;
+//     } else {
+//       console.log('null');
+//       return false;
+//     }
+//   })
+//
+// }
 
 function showProfileForm() {
   $('#create-profile').show()
