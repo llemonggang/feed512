@@ -1,6 +1,7 @@
 $(document).ready(function() {
   pushInbox()
   loadInbox()
+  phoneNumber()
 });
 
 function loadInbox() {
@@ -29,10 +30,9 @@ function loadInbox() {
         var div = $('<div />')
         div.text(profile.businessType)
         li.append(div)
-        var div = $('<div />')
+        var div = $('<div id="email" />')
         div.text(profile.email)
         li.append(div)
-
       })
     })
   })
@@ -75,4 +75,10 @@ function pushInbox() {
         // (hideDonation).val('')
     })
   })
+}
+
+function phoneNumber() {
+  $('.phone').text(function(i, text) {
+    return text.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+});
 }
