@@ -1,16 +1,27 @@
-/*body {
-  background-image: url("../images/Mailbox Map.png");
-  background-position: center;
-  background-size: cover;
-  height: 650px;
-  text-align: center;
-}*/
+
 #df-background {
   background-image: url("/images/Pending Request Pic.png");
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/*body {
-  color: orange;
-}*/
+
+.don-form {
+  padding: 200px;
+}
+
+.field-box {
+  padding: 25px 0;
+  background-color:#522A51;
+  margin: 0 400px 0 400px;
+}
+
+.don-field {
+  padding: 5px 100px 5px 100px;
+
+}
+
+.submit {
+  color:#4A4A4A;
+  padding: 3px 10px 3px 10px;
+}
