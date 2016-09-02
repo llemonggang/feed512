@@ -12,11 +12,17 @@
 }
 
 .field-box {
-
+  background-color: lime;
+  margin: 50px 100px 50px 100px;
+  padding: 10px 10px 10px 10px;
 }
 
 .don-field {
 
+}
+
+.don-bgr {
+  margin-top: 20px;
 }
 
 .don-field:hover {
