@@ -10,7 +10,7 @@
   background-color: white;
   margin: 50px 100px 50px 100px;
   padding: 30px 50px 30px 50px;
-  text-align: left;
+  text-align: center;
 }
 
 #don-confirm {
@@ -76,4 +76,5 @@
 
 #th li {
   display: inline-block;
+
 }
