@@ -1,9 +1,38 @@
 #da-background {
-  background-image: url("/images/Mailbox Map.png");
-  height: 500px;
+  background-image: url("/images/mailbox-map.png");
+  height: 650px;
   margin-left: 200px;
   margin-right: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;;
+  opacity: .6;
+}
+#matches {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
+  font-size: 24px;
+  display: inline-block;
+  letter-spacing: 1px;
+  list-style: none;
+  z-index: 9999;
+  color:black;
+  text-align: left;
+}
+
+#matches li a {
+  padding: 10px 60px 10px 5px;
+  margin-left: 20px;
+  text-align: center;
+  background: transparent;
+  font-size: 26px;
+  padding: 5px 15px;
+  border: 1px solid #522A51;
+  color: #522A51;
+  margin: 0 auto;
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
 }
