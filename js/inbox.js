@@ -36,7 +36,6 @@ function loadInbox() {
       })
     })
   })
-
 }
 
 function getProfile(userId, cb) {
