@@ -40,7 +40,7 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
 }
 
-#main-wrapper {
+.main-wrapper {
   text-align: center;
   width: 1050px;
   margin: 0 auto;

@@ -1,31 +1,22 @@
 
 #df-background {
   background-image: url("/images/Pending Request Pic.png");
-  height: 500px;
-  margin-left: 200px;
-  margin-right: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 650px;
   background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
-/*.don-form {
-  /*padding: 200px;*/
-}*/
+.don-form {
+  /*margin-top: 20px;*/
+}
 
 .field-box {
-  padding-top: 220px;
-  border-radius: 50px;
+
 }
 
-/*.don-field {
-  /*padding: 8px 80px 8px 80px;*/
-}*/
-.don-bgr{
-  background-color: #6B8A00;
-  padding: 30px;
-  margin: 0 300px;
-  border-radius: 50px;
+.don-field {
+
 }
 
 .don-field:hover {
