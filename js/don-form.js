@@ -7,7 +7,7 @@ function donInput() {
   $('.don-form').on('submit', function (e) {
     e.preventDefault();
     $.ajax({
-        url: 'http://localhost:3000/donations',
+        url: 'https://feed512.herokuapp.com/donations',
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('id_token')
         },

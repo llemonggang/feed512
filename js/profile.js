@@ -8,7 +8,7 @@ function createProfile() {
     e.preventDefault()
     // console.log($('#contact').serialize());
     $.ajax({
-      url: 'http://localhost:3000/profiles',
+      url: 'https://feed512.herokuapp.com/profiles',
       headers: {
         'Authorization': 'Bearer ' + localStorage.getItem('id_token')
       },
