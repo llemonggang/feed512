@@ -8,21 +8,22 @@
 }
 
 .don-form {
-  /*margin-top: 20px;*/
+  background-color:transparent;
+  position:center;
+  display: inline;
 }
 
 .field-box {
   background-color: lime;
-  margin: 50px 100px 50px 100px;
-  padding: 10px 10px 10px 10px;
+  margin-top: 15px;
+  padding: 10px 30px 10px 30px;
 }
 
 .don-field {
-
-}
-
-.don-bgr {
-  margin-top: 20px;
+  margin-top: 300px;
+  padding: 10px 60px 10px 5px;
+  text-align: left;
+  display: inline;
 }
 
 .don-field:hover {
@@ -32,7 +33,7 @@
 .submit {
   /*color:#4A4A4A;*/
   padding: 3px 10px 3px 10px;
-  /*margin-left: auto;*/
+  margin-left: 1%;
 }
 
 .submit:hover {
