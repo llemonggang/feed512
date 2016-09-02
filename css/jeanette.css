@@ -1,0 +1,80 @@
+#middle {
+  background-image: url(../images/mailbox-map.png);
+  background-size: contain;
+  height: 500px;
+  font-family: "San Francisco";
+}
+
+#inner {
+  height: 375px;
+  background-color: white;
+  margin: 50px 100px 50px 100px;
+  padding: 30px 50px 30px 50px;
+  text-align: center;
+}
+
+#don-confirm {
+  list-style: none;
+  text-align: left;
+
+}
+
+#don-confirm li {
+  color: #4A4A4A;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#don-confirm li div {
+  padding: 10px;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: right;
+}
+
+#email {
+  text-transform: none;
+}
+
+#th {
+  list-style: none;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  font-size: 10px;
+}
+
+#table1 {
+  text-align: left;
+}
+#table2 {
+  text-align: left;
+  padding: 0px 0px 0px 40px;
+}
+#table3 {
+  text-align: left;
+  padding: 0px 0px 0px 100px;
+
+}
+#table4 {
+  text-align: left;
+  padding: 0px 0px 0px 70px;
+
+}
+#table5 {
+  text-align: left;
+  padding: 0px 0px 0px 30px;
+
+}
+#table6 {
+  text-align: left;
+  padding: 0px 0px 0px 40px;
+
+}
+
+#th li {
+  display: inline-block;
+
+}
