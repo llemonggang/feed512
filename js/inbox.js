@@ -9,7 +9,7 @@ function loadInbox() {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('id_token')
     },
-    url: 'http://localhost:3000/donations/claimed',
+    url: 'https://feed512.herokuapp.com/donations/claimed',
     method: 'GET'
   }).done(function(donations) {
     donations.forEach(function(donation) {
@@ -44,7 +44,7 @@ function getProfile(userId, cb) {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('id_token')
     },
-    url: 'http://localhost:3000/profiles/' + userId,
+    url: 'https://feed512.herokuapp.com/profiles/' + userId,
     method: 'GET'
   }).done(function(profile) {
     cb(profile)
@@ -65,7 +65,7 @@ function pushInbox() {
       headers: {
         'Authorization': 'Bearer ' + localStorage.getItem('id_token')
       },
-      url: 'http://localhost:3000/donations/claimed',
+      url: 'https://feed512.herokuapp.com/donations/claimed',
       method: 'GET'
     }).done(function(donations) {
       donations.forEach(function(donation) {

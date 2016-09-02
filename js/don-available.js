@@ -32,7 +32,7 @@ function getMatches() {
 
   // Uncomment this and instead of fake date put an actual data.
   $.ajax({
-    url: 'http://localhost:3000/donations/available',
+    url: 'https://feed512.herokuapp.com/donations/available',
     //this will be replaced by the actual url. just checking
     method: 'GET',
     //"post"
@@ -46,7 +46,7 @@ function getMatches() {
       li.text(data.type + ' ')
       var a = $('<a />')
       a.text('Claim')
-      var url = 'http://localhost:3000/donations/' + data._id + '/claim'
+      var url = 'https://feed512.herokuapp.com/donations/' + data._id + '/claim'
       a.attr('href', url)
       a.addClass('claimed')
       li.append(a)

@@ -1,4 +1,4 @@
-// var apiUrl = 'http://localhost:3000';
+// var apiUrl = 'https://feed512.herokuapp.com';
 // var apiUrl = 'TBD';
 
 var lock = new Auth0Lock(
@@ -45,7 +45,7 @@ function saveProfile() {
     headers: {
       'Authorization': 'Bearer ' + localStorage.getItem('id_token')
     },
-    url:'http://localhost:3000/profiles',
+    url:'https://feed512.herokuapp.com/profiles',
     method: 'POST',
     data: $('#profile-form').serialize()
   })
@@ -66,7 +66,7 @@ function checkLoggedIn() {
       headers: {
         'Authorization': 'Bearer ' + localStorage.getItem('id_token')
       },
-      url: 'http://localhost:3000/profiles/me',
+      url: 'https://feed512.herokuapp.com/profiles/me',
       method: 'GET'
     }).done(function(profileData) {
       if (profileData) {
