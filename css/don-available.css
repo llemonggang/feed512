@@ -8,6 +8,7 @@
 
 .don-form {
   padding: 200px;
+
 }
 
 .field-box {
@@ -18,8 +19,8 @@
 }
 
 .don-field {
-  padding: 5px 100px 5px 100px;
-
+  padding: 8px 100px 8px 100px;
+  
 }
 
 .submit {
