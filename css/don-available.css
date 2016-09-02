@@ -27,12 +27,17 @@
   margin-left: 20px;
   text-align: center;
   background: transparent;
-  font-size: 26px;
+  font-size: 16px;
   padding: 5px 15px;
   border: 1px solid #522A51;
   color: #522A51;
+  text-decoration: none;
   margin: 0 auto;
   font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+#matches li {
+  line-height: 55px;
 }
