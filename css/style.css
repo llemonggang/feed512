@@ -350,7 +350,7 @@ footer ul {
   background: white;
   display: inline-block;
   border-radius: 15px;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 #create-profile ul {
   padding: 0;
@@ -363,10 +363,10 @@ footer ul {
   line-height: 10px;
 }
 #profile-form {
-height: 575px;
-top: 100px;
+height: 600px;
 text-align:center;
 margin: 0 auto;
+width: 300px;
 }
 .profile-input {
   padding: 15px 75px 15px 0px;
@@ -378,7 +378,7 @@ margin: 0 auto;
   text-align: left;
   font-size: 16px;
   letter-spacing: 4px;
-  font-family: font-family: "San Francisco";
+  font-family: "San Francisco";
   font-weight: 200;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
 }
@@ -398,3 +398,26 @@ src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/
   color:#6B8A00;
   border-color:#6B8A00;
 }
+#welcome {
+  bottom: 50%;
+  background: white;
+  width: 1050px;
+  height: 650px;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding-top: 100px;
+  opacity: .8;
+}
+#login-button {
+  background: transparent;
+  font-size: 26px;
+  padding: 15px 25px;
+  border: 1px solid #522A51;
+  color: #522A51;
+  margin: 0 auto;
+  margin-right: 9px;
+  margin-top: 50px;
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+  }
