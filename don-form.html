@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!DOCTYPE html>
-<html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +8,14 @@
   <title>Feed512</title>
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/don-form.css">
 </head>
 
 <body>
   <nav id="main-nav">
-
     <div id="nav-logo">
       <a href="index.html"><img src="images/FEED512_Logo.png"></a>
+
     </div>
 
     <ul class="navLink">
@@ -34,13 +32,18 @@
       <li class="menu" id="logout-button"><a href="index.html">Log Out</a></li>
     </ul>
   </nav>
-  Make a new donation!
+
+  <h1>Make a new donation!</h1>
+<div class="main-wrapper" id="df-background">
 
 
-  <form class="don-form">
-    <input class="don-field" type="text" name="type" value="" placeholder="donation type">
-    <button class="submit" type="submit" name="button">submit</button>
-  </form>
+      <form class="don-form" id="border-pads">
+          <input class="don-field" type="text" name="type" value="" placeholder="donation type">
+          <button class="submit" type="submit" name="button">submit</button>
+      </form>
+
+
+</div>
 
   <footer>
     <ul id="one">
@@ -82,5 +85,6 @@
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="//cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
   <script src="js/don-form.js" charset="utf-8"></script>
+
   </body>
 </html>
